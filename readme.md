@@ -1,5 +1,5 @@
 # Temperature converter 
-- This project is a basic Celsius to Fahrenheit temperature converter.
+- This project aims to be a basic Celsius to Fahrenheit temperature converter.
 - I'm focusing on JavaScript syntax, as I've just learned how to write and use functions.
 - This is a work in progress, I will continue to add and implement code.
 
