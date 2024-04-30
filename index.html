@@ -9,9 +9,8 @@
 <body>
     <form>
         <label for="celsius"> Celsius</label>
-        <input type="text" id="celsius" placeholder="0" value=""> <!-- Celsius ° -->
+        <input type="number" id="celsius" placeholder="0" value="" oninput="convert()"> <!-- Celsius ° -->
     </form>
-    <button type="button" onclick="convert()">Convert</button>
     <form>
         <label for="fahrenheit">Fahrenheit</label>
         <input type="text" id="fahrenheit" placeholder="32" readonly>  <!-- Fahrenheit ° -->
