@@ -1,3 +1,35 @@
 body{
-    background-color: darkgray;
+    background-color: lightblue
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
+    align-content: center;
+}
+
+label, input {
+    
+    font-size: 1rem;
+}
+
+label {
+    width: 5rem;
+}
+
+input {
+    width: 4rem;
+}
+
+
+.container {
+    margin: 2rem 1rem;
+}
+
+h1 {
+    color: blue;
+    font-size: 2rem;
 }
