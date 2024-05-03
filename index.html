@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,26 +18,24 @@
         </header>
         <main>
             <div class="card">
-                <h2>Celsius - Fahrenheit</h2>
-                <form>
+                <form class="first-form">
                     <label for="celsius"> Celsius</label>
                     <input type="number" id="celsius" placeholder="0" value="" oninput="convert()"> <!-- Celsius ° -->
                 </form>
 
-                <form>
+                <form class="second-form">
                     <label for="fahrenheit">Fahrenheit</label>
-                    <input type="text" id="fahrenheit" placeholder="32" readonly>  <!-- Fahrenheit ° -->
+                    <input type="text" id="fahrenheit" class="temperature" placeholder="32" readonly>  <!-- Fahrenheit ° -->
                 </form>   
             </div>
 
             <div class="card">
-                <h2>Fahrenheit- Celsius</h2>
-                <form>
+                <form class="first-form">
                     <label for="fahrenheit-1">Fahrenheit</label>
-                    <input type="number" id="fahrenheit-1" placeholder="0" value="" oninput="reverse()">
+                    <input type="number" id="fahrenheit-1"  class="temperature" placeholder="0" value="" oninput="reverse()">
                 </form>
             
-                <form>
+                <form class="second-form">
                     <label for="celsius-1">Celsius</label>
                     <input type="text" id="celsius-1" placeholder="-17,78" readonly>
                 </form>
