@@ -7,32 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1> Temperature converter</h1>
-        <h2>Celsius - Fahrenheit</h2>
-        <form>
-            <label for="celsius"> Celsius</label>
-            <input type="number" id="celsius" placeholder="0" value="" oninput="convert()"> <!-- Celsius ° -->
-        </form>
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <h1> Temperature converter</h1>
+            </div>
+        </header>
+        <main>
+            <div class="card">
+                <h2>Celsius - Fahrenheit</h2>
+                <form>
+                    <label for="celsius"> Celsius</label>
+                    <input type="number" id="celsius" placeholder="0" value="" oninput="convert()"> <!-- Celsius ° -->
+                </form>
 
-        <form>
-            <label for="fahrenheit">Fahrenheit</label>
-            <input type="text" id="fahrenheit" placeholder="32" readonly>  <!-- Fahrenheit ° -->
-        </form>   
-   </div>
+                <form>
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="text" id="fahrenheit" placeholder="32" readonly>  <!-- Fahrenheit ° -->
+                </form>   
+            </div>
 
-   <div class="container">
-        <h2>Fahrenheit- Celsius</h2>
-        <form>
-            <label for="fahrenheit-1">Fahrenheit</label>
-            <input type="number" id="fahrenheit-1" placeholder="0" value="" oninput="reverse()">
-        </form>
-    
-        <form>
-            <label for="celsius-1">Celsius</label>
-            <input type="text" id="celsius-1" placeholder="-17,78" readonly>
-        </form>
-   </div>
+            <div class="card">
+                <h2>Fahrenheit- Celsius</h2>
+                <form>
+                    <label for="fahrenheit-1">Fahrenheit</label>
+                    <input type="number" id="fahrenheit-1" placeholder="0" value="" oninput="reverse()">
+                </form>
+            
+                <form>
+                    <label for="celsius-1">Celsius</label>
+                    <input type="text" id="celsius-1" placeholder="-17,78" readonly>
+                </form>
+        </div>
+</main>
+<footer>
+    <div class="contact">
+        <p>Coded by 
+            <a href="https://github.com/GiuliaDeveloper" target="_blank" rel="noopener">
+                Giulia Moukouyou. 
+            </a>
+            <br/>
+            <a href="https://github.com/GiuliaDeveloper/temperature-converter" target="_blank" rel="noopener">
+                See the code here. 
+            </a>
+        </p>
+    </div>
+</footer>
+</div>
  <script src="script.js"></script>   
 </body>
 </html>
