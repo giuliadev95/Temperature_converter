@@ -1,6 +1,4 @@
-
 /* Typography */
-
 * {
     font-family: "Roboto Serif", serif;
 }
@@ -22,7 +20,8 @@ h2 {
 }
 
 
-p { font-size: 0.8rem;
+p { 
+    font-size: 0.8rem;
 }
 
 
@@ -39,8 +38,7 @@ input, label {
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-rows: 0.2fr 1fr 0.5fr;
-    
+    grid-template-rows: 0.2fr 1fr 0.5fr;   
 }
 
 
@@ -53,8 +51,7 @@ main {
 .card {
     text-align: center;
     border: 1px solid black;
-    padding: 1rem 2rem;
-   
+    padding: 1rem 2rem; 
 }
 
 
@@ -94,7 +91,7 @@ input {
     margin-top: 1.5rem;
 }
 
-/* media query */
+/* Media query for laptops */
 @media (min-width:1024px) {
     main {
         grid-template-columns: repeat(2, 1fr);

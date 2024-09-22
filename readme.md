@@ -1,31 +1,27 @@
 # Temperature converter 
-- This project is a basic temperature converter from Celsius to Fahrenheit degrees.
+- This project is a basic temperature converter organized in two cards, one to convert from Celsius to Fahrenheit degrees, and the other for the opposite.
 
-- This work is in progress: the converter must be implemented to function from Fahrenheit to Celsius either, and the design coded.
+- My goal is to implement this design by reducing the cards to one able to perform both conversions.
+
+- See the [project live](https://temperaturejsconverter.netlify.app/).
 
 
 ## Workflow
-- I first focused on writing the JavaScript syntax, secondly I'll pass to the design part.
+1) In the index.html I coded beginner form with a "Celsius" label and a void input field with the attribute "type: number".
+2) I added a "Convert" button, and an input with the attribute "readonly" to host the result.
+3) I then worked on the sctipt.js, and wrote the functions, using the consol.log() to check everytime if the conversion from string to number was successfull and to test other steps.
+4) I removed the console.log() once the project was finished.
+5) I replicated the html structure and the JavaScript logic in a second card hosting the reverse conversion from Fahrenheit to Celsius.
+6) When I was okay with the result, I worked on the styling using the grid layout, a font-style from Google Fonts, and a colour palette.
 
-- Those are the steps I followed:
-1) Take the string value the user writes down in the 'celsius' input field, and convert it to a number with the parseFloat() function.
-2) Check the type of value through console.log(), to be sure we now have a number.
-3) Perform the conversion from Celsius to Fahrenheit degrees.
-4) Make the result appear in the 'Fahrenheit' input field. ( This field is set to "readonly", as it must not allow the user to write in it, but just to read the result it shows.)
+## Functions and properties I learnt
+### JavaScript 
+- parceFloat(): converts a string to a number.
+- oninput
+- .toFixed(1): returns a number with up to one decimal.
 
 
-### JavaScript I've learnt
-- Convert the string value of the 'Temperature' input to a number using the parseFloat() function. This allows me to perform calculations with it and obtain the numeric value in Fahrenheit.
-
-
-``` js snippet
-
-var conversion = parseFloat(prompt); // The input content gets converted from a string into a number;
-   console.log(typeof conversion); // Check if the type of the acutal value is now a number. The console returns: "number".
-
-```
-
-### HTML I've learnt
+### HTML 
 - Use the oninput attribute to call the ('convert') function with no need of an additional button that triggers it with an "onclick" attribute.
 
 - Use the readonly attribute for the result input field.
@@ -37,5 +33,19 @@ var conversion = parseFloat(prompt); // The input content gets converted from a 
 <input type="number" id="celsius" placeholder="0" value="" oninput="convert()">
 <input type="text" id="fahrenheit" placeholder="32" readonly>
 ```
+
+
+### CSS
+
+
+## List of implementations:
+Before! :
+1) write a better logic
+2) implement the background changer 
+3) add the formulas for both convertions
+
+// After all of that, then i can work on:
+4) work with the sound
+5) add the forecast
 
 
